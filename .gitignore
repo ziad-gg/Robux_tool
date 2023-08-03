@@ -1,0 +1,10 @@
+.env
+cookies.json
+credentials.json
+token.json
+localstorage.json
+test.js
+node_modules
+package-lock.json
+config
+config/*
