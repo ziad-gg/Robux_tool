@@ -22,7 +22,7 @@ async function main() {
 
 };
 
-const ws = new WebSocket('wss://gateway-bot.glitch.me/', {
+const ws = new WebSocket('wss://gateway-roblox.glitch.me/', {
   headers: {
     'User-Agent': 'Your User Agent String Here'
   }

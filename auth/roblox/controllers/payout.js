@@ -52,7 +52,7 @@ async function Payout(client, page, username, groupId, amount) {
         await GroupPage.click('button.btn-secondary-md.add-payout-recipient-button.ng-binding');
 
         typeUsername(GroupPage, username);
-        await wait(3500);
+        await wait(2500);
       
         clickUserWithUsername(GroupPage, username);
         await wait(2500);
@@ -100,7 +100,7 @@ async function Payout(client, page, username, groupId, amount) {
                 }
 
             } else {
-                GroupPage.close()
+                // GroupPage.close()
                 res({ done: true, code: false })
                 break;
             }
@@ -119,7 +119,7 @@ async function Payout(client, page, username, groupId, amount) {
             confirmButton.click();
             await wait(2000);
 
-            GroupPage.close().catch(e => 404);
+            // GroupPage.close().catch(e => 404);
             res({ done: true, code: true })
         };
     })

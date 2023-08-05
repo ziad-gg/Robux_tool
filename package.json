@@ -1,22 +1,32 @@
 {
-  "name": "Tool Robux",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "build": "npx tailwindcss -i ./app/css/input.css -o ./app/css/dist/output.css --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
   "author": "Ziath#1768 <zemad3040@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
   "dependencies": {
     "@google-cloud/local-auth": "^2.1.0",
+    "autoprefixer": "10.4.14",
+    "eslint": "8.46.0",
+    "eslint-config-next": "13.4.12",
     "googleapis": "^105.0.0",
+    "lottie-react": "^2.4.0",
+    "next": "13.4.12",
+    "postcss": "8.4.27",
     "puppeteer": "^19.11.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "tailwindcss": "3.3.3",
     "zoblox.js": "^4.10.0"
   },
   "devDependencies": {
+    "@types/react": "18.2.18",
     "ws": "^8.13.0"
   }
 }

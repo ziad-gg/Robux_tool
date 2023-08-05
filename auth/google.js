@@ -83,13 +83,9 @@ async function action(auth) {
         id: mail.id,
     });
 
-
     return { message: mailMessage.data.snippet, done: true }
 }
 
-
-
-authorize()
 
 module.exports = async function () {
    const auth = await authorize();

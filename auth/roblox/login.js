@@ -60,6 +60,7 @@ async function Login(page, username, password) {
       // console.log("dialog: ", dialogModal)
       if (dialogModal) {
         await wait(10_000);
+        
         const { message, done } = await mail();
 
         if (message.includes(username)) {
@@ -68,7 +69,6 @@ async function Login(page, username, password) {
           if (match && match[1]) {
             verificationCode = match[1];
             console.log('Found verification code:', verificationCode);
-            break;
           } else {
             console.log('Unable to extract the verification code from the message:', message);
           }
